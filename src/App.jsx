@@ -26,10 +26,10 @@ const App = () => {
           <Route path="/login" element={!isLoggedIn ? <Login setIsLoggedIn={setIsLoggedIn} /> : <Navigate to="/" />} />
           <Route path="/register" element={!isLoggedIn ? <Register /> : <Navigate to="/" />} />
           <Route path="/" element={isLoggedIn ? <Gallery /> : <Navigate to="/login" />} />
-          <Route path="/" element={isLoggedIn ? <TopRestaurants /> : <Navigate to="/login" />} />
 
         </Routes>
       </div>
+      <TopRestaurants /> {/* Use the component here */}
       <RestaurantList /> {/* Use the component here */}
 
 
