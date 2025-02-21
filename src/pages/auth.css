@@ -1,0 +1,129 @@
+/* === Global Styling === */
+*{
+    font-family: "Inter";
+}
+
+/* === Authentication Container === */
+.auth-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    background: white;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* === Form Styling === */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* === Buttons === */
+.btn {
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 500;
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+}
+
+/* === Navbar Styling === */
+.navbar {
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: #343a40;
+    transition: all 0.4s ease-in-out;
+    /* margin-top: -48px; */
+    z-index: 999;
+    border: 1px solid #1575d6;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+}
+
+.navbar button {
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar button:hover {
+    transform: scale(1.1);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+/* === Welcome Message === */
+.welcome-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+}
+
+/* === Animations === */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* === Responsive Styling === */
+
+@media (max-width: 769px) {
+    .auth-container {
+        padding: 20px;
+        margin: 10px auto;
+        justify-content: center;
+        align-items: center;
+    }
+}

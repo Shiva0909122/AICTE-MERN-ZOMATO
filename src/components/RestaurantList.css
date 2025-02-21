@@ -1,0 +1,104 @@
+/* Container Styling */
+.container1 {
+  width:80%;
+  margin: 0 auto;
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* Heading Styling */
+h2.text-center {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* City Filter Buttons */
+.d-flex.justify-content-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn {
+  min-width: 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* Restaurant Cards */
+.row.g-4 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0px;
+}
+
+/* Individual Card */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image */
+.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Card Body */
+.card-body {
+  text-align: center;
+  padding: 15px;
+}
+
+/* Restaurant Name */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Price */
+.text-success {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* No Restaurants Message */
+.text-muted {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+
+  .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
